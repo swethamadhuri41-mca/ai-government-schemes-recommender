@@ -1,0 +1,87 @@
+[
+  {
+    "id": "pm_kisan",
+    "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+    "description": "Provides income support of \u20b96,000 per year, paid in three equal installments, to landholding farmer families across the country.",
+    "url": "https://pmkisan.gov.in/",
+    "eligibility": {
+      "min_age": 18,
+      "max_age": null,
+      "max_income": null,
+      "categories": ["All"],
+      "states": ["All"],
+      "gender": ["All"],
+      "education": ["Any"],
+      "occupation": ["Farmer"],
+      "disability": "Any"
+    }
+  },
+  {
+    "id": "pmay",
+    "name": "Pradhan Mantri Awas Yojana (PMAY)",
+    "description": "Offers financial assistance and interest subsidy on home loans to help eligible families build or buy their own homes.",
+    "url": "https://pmaymis.gov.in/",
+    "eligibility": {
+      "min_age": 18,
+      "max_age": null,
+      "max_income": 1800000,
+      "categories": ["All"],
+      "states": ["All"],
+      "gender": ["All"],
+      "education": ["Any"],
+      "occupation": ["Any"],
+      "disability": "Any"
+    }
+  },
+  {
+    "id": "national_scholarship",
+    "name": "National Scholarship Portal - Means-cum-Merit Scholarship",
+    "description": "Financial assistance for students from SC, ST, and BC backgrounds with low family income to continue their education.",
+    "url": "https://scholarships.gov.in/",
+    "eligibility": {
+      "min_age": 14,
+      "max_age": 30,
+      "max_income": 250000,
+      "categories": ["SC", "ST", "BC"],
+      "states": ["All"],
+      "gender": ["All"],
+      "education": ["10th Pass", "12th Pass", "Diploma", "Undergraduate", "Postgraduate"],
+      "occupation": ["Student"],
+      "disability": "Any"
+    }
+  },
+  {
+    "id": "pmmy",
+    "name": "Pradhan Mantri Mudra Yojana (PMMY)",
+    "description": "Provides collateral-free loans of up to \u20b910 lakh to small business owners and aspiring entrepreneurs to start or grow a business.",
+    "url": "https://www.mudra.org.in/",
+    "eligibility": {
+      "min_age": 18,
+      "max_age": 65,
+      "max_income": null,
+      "categories": ["All"],
+      "states": ["All"],
+      "gender": ["All"],
+      "education": ["Any"],
+      "occupation": ["Self-Employed/Business", "Unemployed"],
+      "disability": "Any"
+    }
+  },
+  {
+    "id": "adip_scheme",
+    "name": "ADIP Scheme (Assistance to Disabled Persons)",
+    "description": "Provides free or subsidised modern, durable assistive devices (wheelchairs, hearing aids, prosthetics, etc.) to persons with disabilities.",
+    "url": "https://www.alimco.in/",
+    "eligibility": {
+      "min_age": 0,
+      "max_age": null,
+      "max_income": 300000,
+      "categories": ["All"],
+      "states": ["All"],
+      "gender": ["All"],
+      "education": ["Any"],
+      "occupation": ["Any"],
+      "disability": "Yes"
+    }
+  }
+]

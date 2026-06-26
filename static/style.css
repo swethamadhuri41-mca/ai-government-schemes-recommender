@@ -1,0 +1,297 @@
+/* ---------------------------------------------------------------
+   AI Personalized Government Schemes and Jobs Eligibility Recommender
+   Minimal, professional, light-theme, mobile-friendly stylesheet.
+   No animations or transitions are used, per project requirements.
+------------------------------------------------------------------ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  color: #1f2933;
+  line-height: 1.5;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px 48px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e0e4e8;
+  border-radius: 8px;
+  padding: 28px 24px;
+  width: 100%;
+  max-width: 560px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.card.wide {
+  max-width: 860px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0 0 8px;
+  color: #102a43;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin: 0 0 12px;
+  color: #102a43;
+  border-bottom: 1px solid #e0e4e8;
+  padding-bottom: 6px;
+}
+
+.subtitle {
+  margin: 0 0 20px;
+  color: #52606d;
+  font-size: 0.95rem;
+}
+
+/* ---------------- Form styling ---------------- */
+
+.form-group {
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #243b53;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #cbd2d9;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #1f2933;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4a6fa5;
+}
+
+.btn-primary {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  background-color: #1d4e89;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #163d6c;
+}
+
+.btn-primary:disabled {
+  background-color: #8fa6c4;
+  cursor: not-allowed;
+}
+
+.btn-block {
+  margin-top: 24px;
+}
+
+/* ---------------- Alerts / validation ---------------- */
+
+.alert {
+  padding: 12px 14px;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  font-size: 0.9rem;
+}
+
+.alert-error {
+  background-color: #fdecea;
+  border: 1px solid #f5c2c0;
+  color: #7a1f1a;
+}
+
+.alert ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+}
+
+.field-error {
+  color: #b3261e;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+/* ---------------- Results page ---------------- */
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #1d4e89;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.summary-box {
+  background-color: #f0f5fb;
+  border: 1px solid #d4e2f2;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 28px;
+}
+
+.summary-box h2 {
+  border-bottom: none;
+  margin-bottom: 8px;
+  padding-bottom: 0;
+}
+
+.results-section {
+  margin-bottom: 32px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.result-card {
+  border: 1px solid #e0e4e8;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fafbfc;
+  display: flex;
+  flex-direction: column;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.result-header h3 {
+  margin: 0;
+  font-size: 1.02rem;
+  color: #102a43;
+}
+
+.result-desc {
+  font-size: 0.9rem;
+  color: #3e4c59;
+  margin: 0 0 10px;
+}
+
+.result-reason {
+  font-size: 0.85rem;
+  color: #334e68;
+  background-color: #f4f6f8;
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin: 0 0 14px;
+  flex-grow: 1;
+}
+
+.btn-apply {
+  display: inline-block;
+  text-align: center;
+  background-color: #1d4e89;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 9px 0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.btn-apply:hover {
+  background-color: #163d6c;
+}
+
+.badge {
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.badge-high {
+  background-color: #e3f5e6;
+  color: #1e6b34;
+  border: 1px solid #b9e3c2;
+}
+
+.badge-medium {
+  background-color: #fff3e0;
+  color: #8a5a13;
+  border: 1px solid #f3d9a8;
+}
+
+.badge-low {
+  background-color: #fdecea;
+  color: #8a2e25;
+  border: 1px solid #f3c4bd;
+}
+
+.no-results {
+  color: #52606d;
+  font-size: 0.9rem;
+  background-color: #f4f6f8;
+  border: 1px dashed #cbd2d9;
+  border-radius: 6px;
+  padding: 14px;
+}
+
+/* ---------------- Mobile friendly adjustments ---------------- */
+
+@media (max-width: 560px) {
+  .card {
+    padding: 20px 16px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+}

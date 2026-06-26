@@ -1,0 +1,87 @@
+[
+  {
+    "id": "ssc_cgl",
+    "name": "SSC CGL (Combined Graduate Level Examination)",
+    "description": "Recruitment exam conducted by the Staff Selection Commission for various Group B and Group C posts in central government ministries and departments.",
+    "url": "https://ssc.nic.in/",
+    "eligibility": {
+      "min_age": 18,
+      "max_age": 32,
+      "max_income": null,
+      "categories": ["All"],
+      "states": ["All"],
+      "gender": ["All"],
+      "education": ["Undergraduate", "Postgraduate", "Doctorate"],
+      "occupation": ["Any"],
+      "disability": "Any"
+    }
+  },
+  {
+    "id": "ibps_po",
+    "name": "IBPS PO / Clerk Recruitment",
+    "description": "Common recruitment process by the Institute of Banking Personnel Selection for Probationary Officer and Clerk posts in public sector banks.",
+    "url": "https://www.ibps.in/",
+    "eligibility": {
+      "min_age": 20,
+      "max_age": 30,
+      "max_income": null,
+      "categories": ["All"],
+      "states": ["All"],
+      "gender": ["All"],
+      "education": ["Undergraduate", "Postgraduate", "Doctorate"],
+      "occupation": ["Any"],
+      "disability": "Any"
+    }
+  },
+  {
+    "id": "rrb_group_d",
+    "name": "Railway Recruitment Board (RRB) Group D / NTPC",
+    "description": "Recruitment for technician, trackman, helper, and non-technical popular categories posts across Indian Railways zones.",
+    "url": "https://www.rrbapply.gov.in/",
+    "eligibility": {
+      "min_age": 18,
+      "max_age": 33,
+      "max_income": null,
+      "categories": ["All"],
+      "states": ["All"],
+      "gender": ["All"],
+      "education": ["10th Pass", "12th Pass", "Diploma", "Undergraduate"],
+      "occupation": ["Any"],
+      "disability": "Any"
+    }
+  },
+  {
+    "id": "anganwadi_worker",
+    "name": "Anganwadi Worker / Helper",
+    "description": "Community-level posts under the Integrated Child Development Services (ICDS) scheme to support child nutrition, health, and pre-school education.",
+    "url": "https://wcd.nic.in/",
+    "eligibility": {
+      "min_age": 18,
+      "max_age": 45,
+      "max_income": null,
+      "categories": ["All"],
+      "states": ["All"],
+      "gender": ["Female"],
+      "education": ["10th Pass", "12th Pass"],
+      "occupation": ["Any"],
+      "disability": "Any"
+    }
+  },
+  {
+    "id": "ap_police_constable",
+    "name": "Andhra Pradesh Police Constable Recruitment",
+    "description": "Recruitment for Police Constable (Civil/AR) posts in Andhra Pradesh conducted by the State Level Police Recruitment Board.",
+    "url": "https://slprb.ap.gov.in/",
+    "eligibility": {
+      "min_age": 18,
+      "max_age": 26,
+      "max_income": null,
+      "categories": ["All"],
+      "states": ["Andhra Pradesh"],
+      "gender": ["All"],
+      "education": ["10th Pass", "12th Pass", "Diploma", "Undergraduate"],
+      "occupation": ["Any"],
+      "disability": "Any"
+    }
+  }
+]

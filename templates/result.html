@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Eligibility Results</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="page">
+    <div class="card wide">
+      <a href="{{ url_for('index') }}" class="back-link">&larr; Edit my details</a>
+      <h1>Your Eligibility Results</h1>
+
+      <section class="summary-box">
+        <h2>Profile Summary</h2>
+        <p>{{ summary }}</p>
+      </section>
+
+      <section class="results-section">
+        <h2>Recommended Government Schemes</h2>
+        {% if schemes %}
+          <div class="results-grid">
+            {% for scheme in schemes %}
+              <div class="result-card">
+                <div class="result-header">
+                  <h3>{{ scheme.name }}</h3>
+                  <span class="badge badge-{{ scheme.score|lower }}">{{ scheme.score }}</span>
+                </div>
+                <p class="result-desc">{{ scheme.description }}</p>
+                <p class="result-reason"><strong>Why recommended:</strong> {{ scheme.reason }}</p>
+                <a href="{{ scheme.url }}" target="_blank" rel="noopener noreferrer" class="btn-apply">Apply Now</a>
+              </div>
+            {% endfor %}
+          </div>
+        {% else %}
+          <p class="no-results">No government schemes matched your profile right now. Try updating your details if you think this is unexpected.</p>
+        {% endif %}
+      </section>
+
+      <section class="results-section">
+        <h2>Recommended Jobs</h2>
+        {% if jobs %}
+          <div class="results-grid">
+            {% for job in jobs %}
+              <div class="result-card">
+                <div class="result-header">
+                  <h3>{{ job.name }}</h3>
+                  <span class="badge badge-{{ job.score|lower }}">{{ job.score }}</span>
+                </div>
+                <p class="result-desc">{{ job.description }}</p>
+                <p class="result-reason"><strong>Why recommended:</strong> {{ job.reason }}</p>
+                <a href="{{ job.url }}" target="_blank" rel="noopener noreferrer" class="btn-apply">Apply Now</a>
+              </div>
+            {% endfor %}
+          </div>
+        {% else %}
+          <p class="no-results">No job opportunities matched your profile right now. Try updating your details if you think this is unexpected.</p>
+        {% endif %}
+      </section>
+
+      <a href="{{ url_for('index') }}" class="btn-primary btn-block">Check Another Profile</a>
+    </div>
+  </main>
+</body>
+</html>
